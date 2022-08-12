@@ -23,6 +23,8 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Back to machines", "Index")</p>
+<p>@Html.ActionLink("Back to machines", "Index", new { area = "" }, new { @class = "accept" })</p>
+<br>
 <p>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId }, new { @class = "accept" })</p>
+<br>
 <p>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId }, new { @class = "accept" })</p>

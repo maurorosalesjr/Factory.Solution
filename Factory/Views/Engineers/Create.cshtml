@@ -11,7 +11,7 @@
     @Html.LabelFor(model => model.EngineerName)
     @Html.TextBoxFor(model => model.EngineerName)
     <br>
-    @Html.Label("Select machine")
+    @Html.Label("Select certification")
     <br>
     @Html.DropDownList("MachineId")
     <br>
@@ -19,4 +19,5 @@
     <br>
     <input type="submit" value="Add new engineer" class="accept" />
 }
+<br>
 <p>@Html.ActionLink("Show all engineers", "Index", new { area = "" }, new { @class = "accept" })</p>

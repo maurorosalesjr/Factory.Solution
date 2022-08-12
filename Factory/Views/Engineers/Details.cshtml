@@ -30,7 +30,9 @@ else
   <h4>Would you like to add another machine?</h4>
   <p>@Html.ActionLink("Add a machine", "AddMachine", new { id = Model.EngineerId }, new { @class = "accept" })</p>
 }
-
+<br>
 <p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>
+<br>
 <p>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId }, new { @class = "accept" })</p>
+<br>
 <p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId }, new { @class = "accept" })</p>
