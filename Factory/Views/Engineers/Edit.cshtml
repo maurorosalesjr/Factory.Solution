@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>Edit</h1>
+
+<h4>Edit this task: @Html.DisplayFor(model => model.EngineerName)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.EngineerId)
+    <br>
+    @Html.LabelFor(model => model.EngineerName)
+    @Html.EditorFor(model => model.EngineerName)
+    <br>
+    @Html.LabelFor(model => model.HireDate)
+    @Html.EditorFor(model => model.HireDate)
+    <br>
+    @Html.Label("Add a machine")
+    <br>
+    @Html.DropDownList("MachineId")
+    <br>
+    <input type="submit" value="Save" class="accept"/>
+}
+
+<p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "button-53" })</p>

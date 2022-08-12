@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>Add a new engineer</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.EngineerName)
+    @Html.TextBoxFor(model => model.EngineerName)
+    <br>
+    @Html.Label("Select machine")
+    <br>
+    @Html.DropDownList("MachineId")
+    <br>
+    @Html.TextBoxFor(model => model.HireDate, "{0:d MMM yyyy}", new { @class="input-large", type = "datetime-local" })
+    <br>
+    <input type="submit" value="Add new engineer" class="accept" />
+}
+<p>@Html.ActionLink("Show all engineers", "Index", new { area = "" }, new { @class = "accept" })</p>

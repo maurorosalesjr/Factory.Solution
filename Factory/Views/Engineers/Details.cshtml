@@ -1,0 +1,36 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>Engineer Details</h1>
+<hr />
+<h4>Engineer Name: @Html.DisplayFor(model => model.EngineerName)</h4>
+<h4>Hired on: @Html.DisplayFor(model => model.HireDate)</h4>
+
+@if(@Model.JoinEntities.Count == 0)
+{
+  <p>This engineer has not been certified to work on any machines</p>
+}
+else
+{
+  <h4>Machines this engineer has been certified to work on:</h4>
+  <ul>
+  @foreach(var join in Model.JoinEntities)
+  {
+    <li>@join.Machine.MachineName
+    @using (Html.BeginForm("DeleteMachine", "Engineers"))
+    {
+      @Html.Hidden("joinId", @join.EngMachId)
+      <input type="submit" value="Delete" class="accept" />
+    }</li>
+  }
+  </ul>
+  <h4>Would you like to add another machine?</h4>
+  <p>@Html.ActionLink("Add a machine", "AddMachine", new { id = Model.EngineerId }, new { @class = "accept" })</p>
+}
+
+<p>@Html.ActionLink("Back to list", "Index", new { area = "" }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId }, new { @class = "accept" })</p>
