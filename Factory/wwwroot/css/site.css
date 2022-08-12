@@ -1,10 +1,52 @@
-﻿.accept {
-  font-family: "Open Sans", sans-serif;
+﻿html {
+  background-image: linear-gradient(to right, burlywood, blue);
+}
+
+body {
+  background-color: lavenderblush;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 7%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+h1 {
+  text-align: center;
+  color:cadetblue;
+  text-decoration: underline;
+  text-shadow: 2px;
+  border: 6px;
+  border-style: groove;
+  border-color: dodgerblue;
+}
+
+
+div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+}
+
+li {
+  margin-left: 5%;
+  margin-right: 10%;
+  font-family: 'comic sans';
+  font-weight: bold;
+}
+
+.accept {
+  font-family: 	"Papyrus Font";
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+  background-color: springgreen;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
@@ -21,8 +63,59 @@
   left: 5px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .accept {
     padding: 0.25em 0.75em;
   }
+} */
+
+.delete {
+  font-family: "Open Sans", sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-image: linear-gradient(to right, red, orangered);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5px;
+}
+
+
+.delete:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-image: linear-gradient(to right, orange, limegreen);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 5px;
+}
+
+.name:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }

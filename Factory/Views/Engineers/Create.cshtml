@@ -8,14 +8,17 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.EngineerName)
+    @Html.Label("Engineer Name: ")
     @Html.TextBoxFor(model => model.EngineerName)
     <br>
-    @Html.Label("Select certification")
+    @Html.Label("Select certification: ")
     <br>
     @Html.DropDownList("MachineId")
     <br>
+    @Html.Label("Hire Date: ")
+    <br>
     @Html.TextBoxFor(model => model.HireDate, "{0:d MMM yyyy}", new { @class="input-large", type = "datetime-local" })
+    <br>
     <br>
     <input type="submit" value="Add new engineer" class="accept" />
 }

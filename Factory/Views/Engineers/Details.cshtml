@@ -23,7 +23,7 @@ else
     @using (Html.BeginForm("DeleteMachine", "Engineers"))
     {
       @Html.Hidden("joinId", @join.EngMachId)
-      <input type="submit" value="Delete" class="accept" />
+      <input type="submit" value="Delete" class="delete" />
     }</li>
   }
   </ul>
@@ -35,4 +35,4 @@ else
 <br>
 <p>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId }, new { @class = "accept" })</p>
 <br>
-<p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId }, new { @class = "accept" })</p>
+<p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId }, new { @class = "delete" })</p>
