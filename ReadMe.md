@@ -20,7 +20,7 @@
 
 Enables Factory Forman to input new Engineers and their certifications. As well as, being able to add Machines that get repaired by select engineers based on their certifications.
 
-![SQL Design](wwwroot/img/SQLDesign.png "SQL Design")
+![SQL Design](Factory/wwwroot/img/SQLDesign.png "SQL Design")
 
 ## Setup/Installation Requirements
 
@@ -39,7 +39,7 @@ Enables Factory Forman to input new Engineers and their certifications. As well 
 
 
 ## Sample
-![Possible Example](wwwroot/img/example.png "Sample")
+![Possible Example](Factory/wwwroot/img/example.png "Sample")
 
 
 ## Known Bugs
