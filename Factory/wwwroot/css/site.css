@@ -3,18 +3,23 @@
 }
 
 body {
-  background-color: lavenderblush;
+  background-color: darkcyan;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 7%;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  max-width: 100%; 
+  width: 90%;
 }
 
 
 h1 {
   text-align: center;
-  color:cadetblue;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: underline;
+  background-color: darkviolet;
   text-shadow: 2px;
   border: 6px;
   border-style: groove;
@@ -30,6 +35,7 @@ div#footer {
 	color:#CCC;
 	background:#333;
 	padding:8px;
+  text-align: center;
 }
 
 li {
@@ -119,3 +125,11 @@ li {
   top: 5px;
   left: 5px;
 }
+
+#img {
+  background-image: url("/Factory/wwwroot/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
