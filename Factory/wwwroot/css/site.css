@@ -1,9 +1,8 @@
 ﻿html {
-  background-image: linear-gradient(to right, burlywood, blue);
-}
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);}
 
 body {
-  background-color: darkcyan;
+  
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 7%;
@@ -15,13 +14,12 @@ body {
 
 h1 {
   text-align: center;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
   text-decoration: underline;
   background-color: darkviolet;
   text-shadow: 2px;
   border: 6px;
+  padding-bottom: 2%;
   border-style: groove;
   border-color: dodgerblue;
 }
@@ -69,11 +67,6 @@ li {
   left: 5px;
 }
 
-/* @media (min-width: 768px) {
-  .accept {
-    padding: 0.25em 0.75em;
-  }
-} */
 
 .delete {
   font-family: "Open Sans", sans-serif;
@@ -126,10 +119,17 @@ li {
   left: 5px;
 }
 
-#img {
-  background-image: url("/Factory/wwwroot/img/background.jpeg");
+.img {
+  background-image: url("../img/background.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
+  max-width: 90%;
+  
+  margin: 5%;
+  align-content: center;
+  width: 100%;
+  height: 700px;
+  display: block;
 }
 

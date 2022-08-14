@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="~/css/site.css">
     <title>@ViewBag.PageTitle</title>
   </head>
-  <body div="img">
+  <body class="img">
     
     @RenderBody()
     @await Html.PartialAsync("Footer")
+    @* <img src="~/img/background.jpeg"> *@
   </body>
 </html>

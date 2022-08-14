@@ -2,7 +2,7 @@
 
 #### By Mauro Rosales jr
 
-#### enables Forman to keep track of Machine repairs
+#### enables Foreman to keep track of Machine repairs
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-Enables Factory Forman to input new Engineers and their certifications. As well as, being able to add Machines that get repaired by select engineers based on their certifications.
+Enables Factory Foreman to input new Engineers and their certifications. As well as, being able to add Machines that get repaired by select engineers based on their certifications.
 
 ![SQL Design](Factory/wwwroot/img/SQLDesign.png "SQL Design")
 
@@ -39,8 +39,9 @@ Enables Factory Forman to input new Engineers and their certifications. As well 
 
 
 ## Sample
-![Possible Example](Factory/wwwroot/img/example.png "Sample")
+![create engineer view](Factory/wwwroot/img/sample2.png "Adding a new engineer")
 
+![machine details view](Factory/wwwroot/img/sample1.png "Checking who is certified to work on machine")
 
 ## Known Bugs
 
